@@ -88,17 +88,6 @@ Pour vous assurer que toutes les fonctionnalités fonctionnent comme prévu, vou
    - Utilisez la toolbox pour scanner ces machines vulnérables.
    - Vérifiez que les résultats sont précis et complets.
 
-## Structure du Projet
-
-      security-toolbox/
-   ├── app.py
-   ├── requirements.txt
-   ├── templates/
-   │   ├── index.html
-   │   ├── resultat.html
-   └── static/
-       └── particles.json
-
 ## Contribution
 
 Si vous souhaitez contribuer à ce projet, veuillez forker le répertoire et utiliser une branche de fonctionnalité. Les pull requests sont les bienvenues.
