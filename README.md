@@ -105,7 +105,7 @@ Si vous souhaitez contribuer à ce projet, veuillez forker le répertoire et uti
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d'informations.
+Ce projet est sous licence MIT. Voir le fichier License pour plus d'informations.
  ___________________________________________________________________________________________________________________________________________________________________________________________
  
 Note : Assurez-vous d'avoir toutes les permissions et droits nécessaires pour utiliser et distribuer les outils inclus dans cette toolbox. Certains outils peuvent nécessiter des licences spécifiques ou des jetons API pour leur utilisation.
