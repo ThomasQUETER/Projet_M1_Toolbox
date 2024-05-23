@@ -49,7 +49,7 @@ La Toolbox de Sécurité est un ensemble complet d'outils d'analyse de sécurit�
 
    Obtenez votre jeton API sur WPSCan
    Ajoutez votre jeton API dans le fichier app.py :
-   ```bash
+   ```python
    def run_wpscan(target):
     cmd = f"wpscan --url {target} --api-token VOTRE_JETON_API"
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
@@ -89,8 +89,8 @@ Pour vous assurer que toutes les fonctionnalités fonctionnent comme prévu, vou
    - Vérifiez que les résultats sont précis et complets.
 
 ## Structure du Projet
-
-      security-toolbox/
+```
+      Projet_M1_Toolbox/
    ├── app.py
    ├── requirements.txt
    ├── templates/
@@ -98,7 +98,7 @@ Pour vous assurer que toutes les fonctionnalités fonctionnent comme prévu, vou
    │   ├── resultat.html
    └── static/
        └── particles.json
-
+```
 ## Contribution
 
 Si vous souhaitez contribuer à ce projet, veuillez forker le répertoire et utiliser une branche de fonctionnalité. Les pull requests sont les bienvenues.
