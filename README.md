@@ -34,3 +34,82 @@ La Toolbox de Sécurité est un ensemble complet d'outils d'analyse de sécurit�
    ```bash
    git clone https://github.com/ThomasQUETER/Projet_M1_Toolbox.git
    cd Projet_M1_Toolbox
+
+2. **Installer les Dépendances Python :**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Installer les Outils Externes :**
+
+   Nikto: Suivez les instructions sur la page officielle de Nikto : https://github.com/sullo/nikto   
+   WPSCan: Suivez les instructions sur la page officielle de WPSCan : https://wpscan.com   
+   Nuclei: Suivez les instructions sur la page officielle de Nuclei : https://nuclei.projectdiscovery.io/
+   
+4. **Configurer le Jeton API pour WPSCan :**
+
+   Obtenez votre jeton API sur WPSCan
+   Ajoutez votre jeton API dans le fichier app.py :
+   ```bash
+   def run_wpscan(target):
+    cmd = f"wpscan --url {target} --api-token VOTRE_JETON_API"
+    result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+    return result.stdout
+
+## Utilisation
+
+1. **Démarrer l'Application :**
+   ```bash
+   python app.py
+   
+2. **Accéder à l'Interface Web :**
+
+   Ouvrez votre navigateur web et allez à http://127.0.0.1:5000
+   
+3. **Effectuer un Scan :**
+
+   - Entrez l'IP ou le domaine cible.
+   - Sélectionnez les options de scan souhaitées.
+   - Cliquez sur "Lancer le scan" pour démarrer le scan.
+
+4. **Télécharger le Rapport :**
+
+   Après la fin du scan, vous pouvez télécharger le rapport détaillé au format PDF.
+
+## Tests
+
+Pour vous assurer que toutes les fonctionnalités fonctionnent comme prévu, vous pouvez tester manuellement chaque fonctionnalité en utilisant des machines vulnérables comme Metasploitable, OWASP Juice Shop ou DVWA. Voici un guide rapide :
+
+1. **Installer des Machines Vulnérables :**
+
+   - Téléchargez et configurez des machines comme Metasploitable depuis SourceForge : https://sourceforge.net/projects/metasploitable
+
+2. **Exécuter des Scans :**
+
+   - Utilisez la toolbox pour scanner ces machines vulnérables.
+   - Vérifiez que les résultats sont précis et complets.
+
+## Structure du Projet
+
+      security-toolbox/
+   ├── app.py
+   ├── requirements.txt
+   ├── templates/
+   │   ├── index.html
+   │   ├── resultat.html
+   └── static/
+       └── particles.json
+
+## Contribution
+
+Si vous souhaitez contribuer à ce projet, veuillez forker le répertoire et utiliser une branche de fonctionnalité. Les pull requests sont les bienvenues.
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d'informations.
+ ___________________________________________________________________________________________________________________________________________________________________________________________
+ 
+Note : Assurez-vous d'avoir toutes les permissions et droits nécessaires pour utiliser et distribuer les outils inclus dans cette toolbox. Certains outils peuvent nécessiter des licences spécifiques ou des jetons API pour leur utilisation.
+
+## Contact
+
+Pour toute question ou assistance, veuillez contacter [thomas.queter@supdevinci-edu.fr].
