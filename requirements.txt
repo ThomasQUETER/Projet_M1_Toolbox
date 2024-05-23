@@ -1,0 +1,6 @@
+Flask==2.0.1
+nmap==1.4
+zxcvbn==4.4.28
+paramiko==2.7.2
+reportlab==3.5.67
+matplotlib==3.4.2
